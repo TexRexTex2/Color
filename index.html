@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="script.js"></script>
     <title>
       ColorCode
     </title>
@@ -16,5 +15,12 @@
     <form>
       <input type="text" name="color">
     </form>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const color = urlParams.get('color');
+      document.body.style.backgroundColor = color;
+      document.title=color;
+      console.log(color);
+      </script>
   </body>
 </html>
