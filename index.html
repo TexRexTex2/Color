@@ -44,10 +44,19 @@
           #
         </option>
         <option>
-          rgb(
+          RGB(
         </option>
         <option>
-          Hsl(
+          HSL(
+        </option>
+        <option>
+          HWB
+        </option>
+        <option>
+          CMYK
+        </option>
+        <option>
+          
         </option>
       </select>
       <input type="text" name="color">
@@ -63,7 +72,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const color = urlParams.get('color');
       if(color){
-      document.body.style.backgroundColor = color;
+      document.body.style.background = color;
       document.title=color;
       console.log(color);
       }
